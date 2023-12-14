@@ -1,7 +1,7 @@
 import React from "react";
 import "./SearchResult.scss";
-const SearchResult = () => {
+const searchResult = () => {
   return <div></div>;
 };
 
-export default SearchResult;
+export default searchResult;

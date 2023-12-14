@@ -1,9 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 export const homeSlice = createSlice({
-  name: "counter",
-  initialState1: {
-    url: {},
+  name: "home",
+  initialState: {
+    url: { name: "kirtti" },
     genres: {},
   },
   reducers: {

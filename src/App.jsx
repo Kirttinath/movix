@@ -5,6 +5,7 @@ import { getApiConfiguration } from "./Store/homeSlice";
 
 function App() {
   const dispatch = useDispatch();
+  const { url } = useSelector((state) => state.home);
   useEffect(() => {
     apiTesting();
   }, []);
@@ -15,7 +16,7 @@ function App() {
       dispatch(getApiConfiguration(res));
     });
   };
-  return <div className="App"></div>;
+  return <div className="App">{url?.total_pages}</div>;
 }
 
 export default App;

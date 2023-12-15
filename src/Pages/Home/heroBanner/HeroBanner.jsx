@@ -28,8 +28,13 @@ const HeroBanner = () => {
 
   return (
     <div className="heroBanner">
-      <div className="backdrop-img"></div>
-      <div className="wrapper">
+      {!loading && (
+        <div className="backdrop-img">
+          <Img src={background} />
+        </div>
+      )}
+      <div className="opacity-layer"></div>
+      <ContentWrapper>
         <div className="heroBannerContent">
           <span className="title">Welcome</span>
           <span className="subTitle">
@@ -45,7 +50,7 @@ const HeroBanner = () => {
             <button>Search</button>
           </div>
         </div>
-      </div>
+      </ContentWrapper>
     </div>
   );
 };

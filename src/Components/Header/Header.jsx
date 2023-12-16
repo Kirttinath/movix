@@ -18,7 +18,7 @@ const Header = () => {
   const location = useLocation();
 
   return (
-    <header>
+    <header className="header">
       <ContentWrapper>
         <div className="logo">
           <img src={logo} alt="" />

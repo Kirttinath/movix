@@ -69,4 +69,32 @@
       color: white;
     }
   }
+  &.mobileView {
+    background: var(--black3);
+    .menuItems {
+      display: flex;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background: var(--black3);
+      flex-direction: column;
+      width: 100%;
+      padding: 20px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      animation: mobileMenu 0.3s ease forwards;
+      .menuItem {
+        font-size: 20px;
+        width: 100%;
+        height: auto;
+        padding: 15px 20px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+  }
 }

@@ -57,4 +57,16 @@
       }
     }
   }
+  .mobileMenuItems {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    @include md {
+      display: none;
+    }
+    svg {
+      font-size: 18px;
+      color: white;
+    }
+  }
 }

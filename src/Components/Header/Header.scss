@@ -1,3 +1,6 @@
+@import "../../mixins.scss";
+@import url("https://fonts.googleapis.com/css2?family=Alegreya&display=swap");
+
 .header {
   position: fixed;
   transform: translateY(0);
@@ -43,7 +46,8 @@
       align-items: center;
       margin: 0 15px;
       color: white;
-      font-weight: 500;
+      font-family: "Alegreya", serif;
+      font-weight: 650;
       position: relative;
       &.searchIcon {
         margin-right: 0;

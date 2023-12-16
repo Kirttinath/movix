@@ -1,4 +1,7 @@
 @import "../../../mixins.scss";
+@import url("https://fonts.googleapis.com/css2?family=Alegreya&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
 .heroBanner {
   width: 100%;
   height: 450px;
@@ -49,10 +52,20 @@
     .title {
       font-size: 50px;
       font-weight: 700;
+      font-family: "Alegreya", serif;
       margin-bottom: 10;
       @include md {
         margin-bottom: 0;
         font-size: 90px;
+      }
+    }
+    .subTitle {
+      font-size: 18px;
+      font-weight: 500;
+      font-family: "Satisfy", cursive;
+      margin-bottom: 43px;
+      @include md {
+        font-size: 24px;
       }
     }
   }

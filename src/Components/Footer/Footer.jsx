@@ -21,12 +21,12 @@ const Footer = () => {
           <li className="menuItem">FAQ</li>
         </ul>
         <div className="infoText">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur.
+          Introducing Movix, the ultimate entertainment app designed to elevate
+          your viewing experience. Movix is a comprehensive platform that offers
+          a curated selection of the best movies and TV shows, ensuring you
+          always have access to top-notch entertainment. The app boasts an
+          intuitive interface that simplifies the search for your next favorite
+          film or series.
         </div>
         <div className="socialIcons">
           <span className="icon">

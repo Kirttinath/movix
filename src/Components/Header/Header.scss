@@ -24,4 +24,10 @@
     align-items: center;
     justify-content: space-between;
   }
+  .logo {
+    cursor: pointer;
+    img {
+      height: 50px;
+    }
+  }
 }

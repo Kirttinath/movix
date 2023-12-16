@@ -16,4 +16,7 @@
   &.show {
     background-color: var(--black3);
   }
+  &.hide {
+    transform: translateY(-60px);
+  }
 }

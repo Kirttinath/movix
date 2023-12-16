@@ -23,6 +23,13 @@ const Header = () => {
         <div className="logo">
           <img src={logo} alt="" />
         </div>
+        <ul className="menuItems">
+          <li className="menuItem">Movies</li>
+          <li className="menuItem">TV Shows</li>
+          <li className="menuItem">
+            <HiOutlineSearch />
+          </li>
+        </ul>
       </ContentWrapper>
     </header>
   );

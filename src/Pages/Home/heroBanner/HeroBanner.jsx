@@ -47,7 +47,7 @@ const HeroBanner = () => {
               onChange={(e) => setQuery(e.target.value)}
               onKeyUp={searchQueryHandler}
             />
-            <button>Search</button>
+            <button className="button">Search</button>
           </div>
         </div>
       </ContentWrapper>

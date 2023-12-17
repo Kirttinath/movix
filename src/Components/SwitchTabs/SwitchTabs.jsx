@@ -1,7 +1,7 @@
 import React from "react";
 import "./SwitchTabs.scss";
-const SwitchTabs = () => {
-  return <div></div>;
+const SwitchTabs = ({ data, onTabChange }) => {
+  return <div className="switchingTabs"></div>;
 };
 
 export default SwitchTabs;

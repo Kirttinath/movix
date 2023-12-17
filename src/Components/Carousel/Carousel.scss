@@ -55,6 +55,13 @@
       @include lg {
         width: calc(20% - 16px);
       }
+      flex-shrink: 0;
+      .posterBlock {
+        border-radius: 12px;
+        width: 100%;
+        aspect-ratio: 1 / 1.5;
+        margin-bottom: 30px;
+      }
     }
   }
 }

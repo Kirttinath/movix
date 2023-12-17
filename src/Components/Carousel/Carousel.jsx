@@ -10,7 +10,7 @@ import ContentWrapper from "../ContentWrapper/ContentWrapper";
 import Img from "../lazyLoadImage/Img";
 import PosterFallback from "../../assets/no-poster.png";
 import "./Carousel.scss";
-const Carousel = () => {
+const Carousel = ({ data, loading }) => {
   return <div></div>;
 };
 

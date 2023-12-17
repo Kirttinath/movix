@@ -16,6 +16,16 @@ const Carousel = ({ data, loading }) => {
   const navigate = useNavigate();
 
   const navigation = (dir) => {};
+  const skItem = () => {
+    return (
+      <div className="skeletonItem">
+        <div className="posterBlock skeleton"></div>
+        <div className="textBlock"></div>
+        <div className="title skeleton"></div>
+        <div className="date skeleton"></div>
+      </div>
+    );
+  };
 
   return (
     <div className="carousel">
@@ -50,7 +60,13 @@ const Carousel = ({ data, loading }) => {
             })}
           </div>
         ) : (
-          <span>Loading...</span>
+          <div className="loadingSkeleton">
+            {skItem()}
+            {skItem()}
+            {skItem()}
+            {skItem()}
+            {skItem()}
+          </div>
         )}
       </ContentWrapper>
     </div>

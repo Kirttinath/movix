@@ -15,6 +15,8 @@ const Carousel = ({ data, loading }) => {
   const { url } = useSelector((state) => state.home);
   const navigate = useNavigate();
 
+  const navigation = (dir) => {};
+
   return (
     <div className="carousel">
       <ContentWrapper>
@@ -26,6 +28,24 @@ const Carousel = ({ data, loading }) => {
           className="carouselRightNav arrow"
           onClick={() => navigation("right")}
         />
+        {!loading ? (
+          <div className="carouselItems">
+            {data?.map((item) => {
+              const posterUrl = item.poster_path
+                ? url.poster + item.poster_path
+                : PosterFallback;
+              return (
+                <div key={item.id} className="carouselItem">
+                  <div className="posterBlock">
+                    <Img src={posterUrl} />
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        ) : (
+          <span>Loading...</span>
+        )}
       </ContentWrapper>
     </div>
   );

@@ -100,4 +100,15 @@
             width: calc(20% - 16px);
         }
         flex-shrink: 0;
+        .posterBlock {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 1 / 1.5;
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            padding: 10px;
 }

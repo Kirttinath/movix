@@ -1,6 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./SwitchTabs.scss";
 const SwitchTabs = ({ data, onTabChange }) => {
+  const [seletedTab, setSelectedTab] = useState(0);
+  const [left, setLeft] = useState(0);
+
+  const activeTab = (tab, index) => {
+    setLeft(index * 100);
+    setTimeout(() => {
+      setSelectedTab(index);
+    }, 300);
+  };
+
   return (
     <div className="switchingTabs">
       <div className="tabItems">
@@ -9,6 +19,7 @@ const SwitchTabs = ({ data, onTabChange }) => {
             {tab}
           </span>
         ))}
+        <span className="movingBg" style={{ left }} />
       </div>
     </div>
   );

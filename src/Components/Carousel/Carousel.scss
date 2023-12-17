@@ -47,5 +47,14 @@
       margin: 0;
       padding: 0;
     }
+    .skeletonItem {
+      width: 125px;
+      @include md {
+        width: calc(25% - 15px);
+      }
+      @include lg {
+        width: calc(20% - 16px);
+      }
+    }
   }
 }

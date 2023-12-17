@@ -3,4 +3,10 @@
   background-color: white;
   border-radius: 20px;
   padding: 2px;
+  .tabItems {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    position: relative;
+  }
 }

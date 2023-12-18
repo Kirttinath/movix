@@ -9,7 +9,7 @@ import Spinner from "../../Components/Spinner/Spinner";
 import noResults from "../../assets/no-results.png";
 import "./SearchResult.scss";
 
-const SearchResult = () => {
+const searchResult = () => {
   const [data, setData] = useState(null);
   const [pageNum, setPageNum] = useState(1);
   const [loading, setLoading] = useState(false);
@@ -83,4 +83,4 @@ const SearchResult = () => {
   );
 };
 
-export default SearchResult;
+export default searchResult;

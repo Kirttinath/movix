@@ -16,7 +16,25 @@ const Cast = ({ data, loading }) => {
       </div>
     );
   };
-  return <div></div>;
+  return (
+    <div className="castSection">
+      <ContentWrapper>
+        <div className="sectionHeading">Top Cast</div>
+        {!loading ? (
+          <div className="listItems">Cast Data....</div>
+        ) : (
+          <div className="castSkeleton">
+            {skeleton()}
+            {skeleton()}
+            {skeleton()}
+            {skeleton()}
+            {skeleton()}
+            {skeleton()}
+          </div>
+        )}
+      </ContentWrapper>
+    </div>
+  );
 };
 
 export default Cast;

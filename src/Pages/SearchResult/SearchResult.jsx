@@ -4,7 +4,7 @@ import InfiniteScroll from "react-infinite-scroll-component";
 
 import { fetchDataFromApi } from "../../utils/api";
 import ContentWrapper from "../../Components/contentWrapper/ContentWrapper";
-// import MovieCard from "../../Components/MovieCard/MovieCard";
+import MovieCard from "../../Components/MovieCard/MovieCard";
 import Spinner from "../../Components/Spinner/Spinner";
 import noResults from "../../assets/no-results.png";
 import "./SearchResult.scss";

@@ -1,10 +1,12 @@
 @import "../../../mixins.scss";
+@import url("https://fonts.googleapis.com/css2?family=Alegreya&display=swap");
 
 .videosSection {
   position: relative;
   margin-bottom: 50px;
   .sectionHeading {
     font-size: 24px;
+    font-family: "Alegreya", serif;
     color: white;
     margin-bottom: 25px;
   }

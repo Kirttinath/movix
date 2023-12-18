@@ -45,6 +45,14 @@
     text-align: center;
     max-width: 800px;
     margin-bottom: 20px;
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: aqua;
+      font-size: 30px;
+      font-weight: 700;
+    }
     @include md {
       font-size: 19px;
       margin-bottom: 30px;

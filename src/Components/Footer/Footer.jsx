@@ -27,6 +27,9 @@ const Footer = () => {
           ensuring you always have access to top-notch entertainment. The app
           boasts an intuitive interface that simplifies the search for your next
           favorite film🎞️ or series🎞️.
+          <br />
+          <br />
+          <span>Designed By Kirttinath</span>
         </div>
         <div className="socialIcons">
           <span className="icon">

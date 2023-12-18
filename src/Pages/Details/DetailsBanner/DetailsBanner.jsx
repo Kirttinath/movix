@@ -53,8 +53,11 @@ const DetailsBanner = ({ video, crew }) => {
                       ).format("YYYY")})`}
                     </div>
                     <div className="subtitle">{data.tagline}</div>
+                    <Genres data={_genres} />
+                    <div className="row">
+                      <CircleRating rating={data.vote_average.toFixed(1)} />
+                    </div>
                   </div>
-                  <Genres data={_genres} />
                 </div>
               </ContentWrapper>
             </React.Fragment>

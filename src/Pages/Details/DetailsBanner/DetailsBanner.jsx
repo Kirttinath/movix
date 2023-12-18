@@ -13,7 +13,7 @@ import "./DetailsBanner.scss";
 
 const DetailsBanner = ({ video, crew }) => {
   const { mediaType, id } = useParams();
-  const [data, loading] = useFetch(`/${mediaType}/${id}`);
+  const { data, loading } = useFetch(`/${mediaType}/${id}`);
 
   const toHoursAndMinutes = (totalMinutes) => {
     const hours = Math.floor(totalMinutes / 60);

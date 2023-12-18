@@ -41,6 +41,14 @@
           display: block;
         }
       }
+      .name {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 600;
+        @include md {
+            font-size: 18px;
+            line-height: 24px;
+        }
     }
   }
 }

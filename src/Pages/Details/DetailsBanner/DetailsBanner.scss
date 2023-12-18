@@ -78,4 +78,31 @@
                 line-height: 28px;
             }
         }
+        .genres {
+            margin-bottom: 25px;
+            flex-flow: row wrap;
+        }
+        .overview {
+            margin-bottom: 25px;
+            .heading {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+            .description {
+                line-height: 24px;
+                @include md {
+                    padding-right: 100px;
+                }
+            }
+        }
+        .circleRating {
+            max-width: 70px;
+            background-color: var(--black2);
+            @include md {
+                max-width: 90px;
+            }
+            .CircularProgressbar-text {
+                fill: white;
+            }
+        }
 }

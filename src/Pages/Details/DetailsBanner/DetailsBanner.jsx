@@ -19,11 +19,17 @@ const DetailsBanner = ({ video, crew }) => {
 
   const _genres = data?.genres?.map((g) => g.id);
 
+  const director = crew?.filter((f) => f.job === "Director");
+  const writer = crew?.filter(
+    (f) => f.job === "Screenplay" || f.job === "Story" || f.job === "Writer"
+  );
+
   const toHoursAndMinutes = (totalMinutes) => {
     const hours = Math.floor(totalMinutes / 60);
     const minutes = totalMinutes % 60;
     return `${hours}h${minutes > 0 ? ` ${minutes}m` : ""}`;
   };
+
   return (
     <div className="detailsBanner">
       {!loading ? (
@@ -89,6 +95,16 @@ const DetailsBanner = ({ video, crew }) => {
                         </div>
                       )}
                     </div>
+                    {director?.length > 0 && (
+                      <div className="info">
+                        <span className="text bold">Director : </span>
+                        <span className="text">
+                          {director.map((d, i) => (
+                            <span key={i}>{d.name}</span>
+                          ))}
+                        </span>
+                      </div>
+                    )}
                   </div>
                 </div>
               </ContentWrapper>

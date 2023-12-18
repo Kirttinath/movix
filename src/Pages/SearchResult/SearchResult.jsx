@@ -55,8 +55,8 @@ const SearchResult = () => {
             <>
               <div className="pageTitle">
                 {`Search ${
-                  data.total_results > 1 ? "results" : "result"
-                } of '${query}'`}
+                  data.total_results > 1 ? " results " : "result"
+                } of ' ${query}'`}
               </div>
               <InfiniteScroll
                 className="content"

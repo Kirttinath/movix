@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya&display=swap");
 .switchingTabs {
   height: 34px;
   background-color: white;
@@ -10,12 +11,14 @@
     position: relative;
     .tabItem {
       height: 100%;
+      font-family: "Alegreya", serif;
       display: flex;
       align-items: center;
       justify-content: center;
       width: 100px;
       color: var(--black);
-      font-size: 14px;
+      font-size: 18px;
+      font-weight: 700;
       position: relative;
       z-index: 1;
       cursor: pointer;

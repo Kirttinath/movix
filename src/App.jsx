@@ -7,7 +7,6 @@ import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import Home from "./Pages/Home/Home";
 import Details from "./Pages/Details/Details";
-import Searchresult from "./Pages/searchResult/SearchResult";
 import Explore from "./Pages/Explore/Explore";
 import pageNotFound from "./Pages/404/pageNotFound";
 import SearchResult from "./Pages/searchResult/SearchResult";
@@ -58,7 +57,7 @@ function App() {
         <Route path="/:mediaType/:id" element={<Details />} />
         <Route path="/search/:query" element={<SearchResult />} />
         <Route path="/explore/:mediaType" element={<Explore />} />
-        <Route path="*" element={<pageNotFound />} />
+        <Route path="/*" element={<pageNotFound />} />
       </Routes>
       <Footer />
     </BrowserRouter>

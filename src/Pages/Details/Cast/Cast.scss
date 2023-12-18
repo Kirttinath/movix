@@ -1,0 +1,11 @@
+@import "../../../mixins.scss";
+
+.castSection {
+  position: relative;
+  margin-bottom: 50px;
+  .sectionHeading {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 25px;
+  }
+}

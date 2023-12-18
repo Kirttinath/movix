@@ -116,4 +116,15 @@
                     width: 80px;
                 }
             }
+            .text {
+                font-size: 20px;
+                transition: all 0.7s ease-in-out;
+            }
+            .triangle {
+                stroke-dasharray: 240;
+                stroke-dashoffset: 480;
+                stroke: white;
+                transform: translateY(0);
+                transition: all 0.7s ease-in-out;
+            }
 }

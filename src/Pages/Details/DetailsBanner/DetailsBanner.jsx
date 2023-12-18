@@ -8,7 +8,7 @@ import Genres from "../../../Components/Genres/Genres";
 import CircleRating from "../../../Components/CircleRating/CircleRating";
 import Img from "../../../Components/LazyLoadImage/Img";
 import PosterFallback from "../../../assets/no-poster.png";
-
+import { PlayIcon } from "../PlayIcon";
 import "./DetailsBanner.scss";
 
 const DetailsBanner = ({ video, crew }) => {

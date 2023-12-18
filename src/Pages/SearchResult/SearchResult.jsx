@@ -1,11 +1,11 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import InfiniteScroll from "react-infinite-scroll-component";
-import React from "react";
+
 import { fetchDataFromApi } from "../../utils/api";
 import ContentWrapper from "../../Components/contentWrapper/ContentWrapper";
 // import MovieCard from "../../Components/MovieCard/MovieCard";
-// import Spinner from "../../Components/Spinner/Spinner";
+import Spinner from "../../Components/Spinner/Spinner";
 import noResults from "../../assets/no-results.png";
 import "./SearchResult.scss";
 
@@ -46,7 +46,26 @@ const SearchResult = () => {
     fetchInitialData();
   }, [query]);
 
-  return <div className="searchResultsPage"></div>;
+  return (
+    <div className="searchResultsPage">
+      {loading && <Spinner initial={true} />}
+      {!loading && (
+        <ContentWrapper>
+          {data?.results.length > 0 ? (
+            <>
+              <div className="pageTitle">
+                {`Search ${
+                  data.total_results > 1 ? "results" : "result"
+                } of '${query}'`}
+              </div>
+            </>
+          ) : (
+            <span className="resultNotFound">Sorry, Results Not Found...</span>
+          )}
+        </ContentWrapper>
+      )}
+    </div>
+  );
 };
 
 export default SearchResult;

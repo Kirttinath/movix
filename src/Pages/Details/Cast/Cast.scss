@@ -8,4 +8,32 @@
     color: white;
     margin-bottom: 25px;
   }
+  .listItems {
+    display: flex;
+    gap: 20px;
+    overflow-y: hidden;
+    margin-right: -20px;
+    margin-left: -20px;
+    padding: 0 20px;
+    @include md {
+      margin: 0;
+      padding: 0;
+    }
+    .listItem {
+      text-align: center;
+      color: white;
+      .profileImg {
+        width: 125px;
+        height: 125px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-bottom: 15px;
+        @include md {
+          width: 175px;
+          height: 175px;
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
 }

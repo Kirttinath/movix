@@ -15,7 +15,7 @@ const DetailsBanner = ({ video, crew }) => {
   const { mediaType, id } = useParams();
   const { data, loading } = useFetch(`/${mediaType}/${id}`);
 
-  const url = useSelector((state) => state.home);
+  const { url } = useSelector((state) => state.home);
 
   const toHoursAndMinutes = (totalMinutes) => {
     const hours = Math.floor(totalMinutes / 60);
@@ -28,10 +28,8 @@ const DetailsBanner = ({ video, crew }) => {
         <>
           {!!data && (
             <React.Fragment>
-              <div>
-                <div className="backdrop-img">
-                  <Img src={url.backdrop + data?.backdrop_path} />
-                </div>
+              <div className="backdrop-img">
+                <Img src={url.backdrop + data.backdrop_path} />
               </div>
               <div className="opacity-layer"></div>
               <ContentWrapper>

@@ -93,6 +93,7 @@
         }
         .description {
           line-height: 24px;
+          font-family: "Alegreya", serif;
           @include md {
             padding-right: 100px;
           }
@@ -164,6 +165,7 @@
         padding: 15px 0;
         display: flex;
         .infoItem {
+          font-family: "Alegreya", serif;
           margin-right: 10px;
           display: flex;
           flex-flow: row wrap;

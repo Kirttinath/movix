@@ -56,6 +56,28 @@ const DetailsBanner = ({ video, crew }) => {
                     <Genres data={_genres} />
                     <div className="row">
                       <CircleRating rating={data.vote_average.toFixed(1)} />
+                      <div className="playbtn" onCanPlay={() => {}}>
+                        <PlayIcon />
+                        <span className="text">Watch Trailer</span>
+                      </div>
+                    </div>
+                    <div className="overview">
+                      <div className="padding">Overview</div>
+                      <div className="description">{data.overview}</div>
+                    </div>
+                    <div className="info">
+                      {data.status && (
+                        <div className="infoItem">
+                          <span className="text bold">Status : </span>
+                          <span className="text">{data.status}</span>
+                        </div>
+                      )}
+                      {data.release_date && (
+                        <div className="infoItem">
+                          <span className="text bold">Release Date : </span>
+                          <span className="text">{data.release_date}</span>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>

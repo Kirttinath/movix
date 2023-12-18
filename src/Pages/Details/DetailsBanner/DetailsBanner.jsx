@@ -58,14 +58,14 @@ const DetailsBanner = ({ video, crew }) => {
                   </div>
                   <div className="right">
                     <div className="title">
-                      {`${data.name || data.title} (${dayjs(
+                      {`${data?.name || data?.title} (${dayjs(
                         data?.release_date
                       ).format("YYYY")})`}
                     </div>
                     <div className="subtitle">{data.tagline}</div>
                     <Genres data={_genres} />
                     <div className="row">
-                      <CircleRating rating={data.vote_average.toFixed(1)} />
+                      <CircleRating rating={data?.vote_average.toFixed(1)} />
                       <div
                         className="playbtn"
                         onClick={() => {
@@ -79,7 +79,7 @@ const DetailsBanner = ({ video, crew }) => {
                     </div>
                     <div className="overview">
                       <div className="padding">Overview</div>
-                      <div className="description">{data.overview}</div>
+                      <div className="description">{data?.overview}</div>
                     </div>
                     <div className="info">
                       {data.status && (

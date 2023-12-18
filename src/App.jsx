@@ -8,8 +8,8 @@ import Footer from "./Components/Footer/Footer";
 import Home from "./Pages/Home/Home";
 import Details from "./Pages/Details/Details";
 import Explore from "./Pages/Explore/Explore";
-import SearchResult from "./Pages/searchResult/SearchResult";
 import pageNotFound from "./Pages/404/pageNotFound";
+import SearchResult from "./Pages/searchResult/SearchResult";
 
 function App() {
   const dispatch = useDispatch();

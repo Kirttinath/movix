@@ -17,7 +17,29 @@ const VideosSection = ({ data, loading }) => {
       </div>
     );
   };
-  return <div></div>;
+  return (
+    <div className="videosSection">
+      <ContentWrapper>
+        <div className="sectionHeading">Official Videos</div>
+        {!loading ? (
+          <div className="videos">Videos data...</div>
+        ) : (
+          <div className="videoSkeleton">
+            {loadingSkeleton()}
+            {loadingSkeleton()}
+            {loadingSkeleton()}
+            {loadingSkeleton()}
+          </div>
+        )}
+      </ContentWrapper>
+      <VideoPopup
+        show={show}
+        setShow={setShow}
+        videoId={videoId}
+        setVideoId={setVideoId}
+      />
+    </div>
+  );
 };
 
 export default VideosSection;

@@ -4,7 +4,7 @@ import "./pageNotFound.scss";
 
 import ContentWrapper from "../../Components/ContentWrapper/ContentWrapper";
 
-const PageNotFound = () => {
+const pageNotFound = () => {
   return (
     <div className="pageNotFound">
       <ContentWrapper>
@@ -15,4 +15,4 @@ const PageNotFound = () => {
   );
 };
 
-export default PageNotFound;
+export default pageNotFound;

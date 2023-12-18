@@ -32,18 +32,21 @@ const Footer = () => {
           <span>Designed By Kirttinath</span>
         </div>
         <div className="socialIcons">
-          <span className="icon">
+          <a href="https://www.facebook.com/kirttinath.ojha.3" className="icon">
             <FaFacebookF />
-          </span>
-          <span className="icon">
+          </a>
+          <a href="https://www.instagram.com/kirtti_nath/" className="icon">
             <FaInstagram />
-          </span>
-          <span className="icon">
+          </a>
+          <a href="https://twitter.com/Kojha45" className="icon">
             <FaTwitter />
-          </span>
-          <span className="icon">
+          </a>
+          <a
+            href="https://www.linkedin.com/in/kirttinath-ojha/"
+            className="icon"
+          >
             <FaLinkedin />
-          </span>
+          </a>
         </div>
       </ContentWrapper>
     </footer>

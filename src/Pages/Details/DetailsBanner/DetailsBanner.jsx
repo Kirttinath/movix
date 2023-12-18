@@ -17,7 +17,28 @@ const DetailsBanner = ({ video, crew }) => {
     const minutes = totalMinutes % 60;
     return `${hours}h${minutes > 0 ? ` ${minutes}m` : ""}`;
   };
-  return ();
+  return (
+    <div className="detailsBanner">
+      {!loading ? (
+        <div>Details Content...</div>
+      ) : (
+        <div className="detailsBannerSkeleton">
+          <ContentWrapper>
+            <div className="left skeleton"></div>
+            <div className="right">
+              <div className="row skeleton"></div>
+              <div className="row skeleton"></div>
+              <div className="row skeleton"></div>
+              <div className="row skeleton"></div>
+              <div className="row skeleton"></div>
+              <div className="row skeleton"></div>
+              <div className="row skeleton"></div>
+            </div>
+          </ContentWrapper>
+        </div>
+      )}
+    </div>
+  );
 };
 
 export default DetailsBanner;

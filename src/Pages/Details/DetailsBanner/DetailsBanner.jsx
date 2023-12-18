@@ -75,7 +75,17 @@ const DetailsBanner = ({ video, crew }) => {
                       {data.release_date && (
                         <div className="infoItem">
                           <span className="text bold">Release Date : </span>
-                          <span className="text">{data.release_date}</span>
+                          <span className="text">
+                            {dayjs(data.release_date).format("MMM D, YYYY")}
+                          </span>
+                        </div>
+                      )}
+                      {data.runtime && (
+                        <div className="infoItem">
+                          <span className="text bold">Run Time : </span>
+                          <span className="text">
+                            {toHoursAndMinutes(data.runtime)}
+                          </span>
                         </div>
                       )}
                     </div>

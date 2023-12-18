@@ -37,4 +37,24 @@
     bottom: 0;
     left: 0;
   }
+  .content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 25px;
+    @include md {
+        gap: 50px;
+        flex-direction: row;
+    }
+    .left {
+        flex-shrink: 0;
+        .posterImg {
+            width: 100%;
+            display: block;
+            border-radius: 12px;
+            @include md {
+                max-width: 350px;
+            }
+        }
+    }
 }

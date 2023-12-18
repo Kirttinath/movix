@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import InfiniteScroll from "react-infinite-scroll-component";
 
 import { fetchDataFromApi } from "../../utils/api";
-import ContentWrapper from "../../Components/contentWrapper/ContentWrapper";
+import ContentWrapper from "../../Components/ContentWrapper/ContentWrapper";
 import MovieCard from "../../Components/MovieCard/MovieCard";
 import Spinner from "../../Components/Spinner/Spinner";
 import noResults from "../../assets/no-results.png";

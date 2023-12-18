@@ -133,4 +133,20 @@
                 stroke-dashoffset: 1300;
                 transition: all 0.5s ease-in-out;
             }
+            &:hover {
+                .text {
+                    color: var(--pink);
+                }
+                .triangle {
+                    stroke-dashoffset: 0;
+                    opacity: 1;
+                    stroke: var(--pink);
+                    animation: trailorPlay 0.7s ease-in-out;
+                }
+                .circle {
+                    stroke-dashoffset: 0;
+                    stroke: var(--pink);
+                }
+            }
+        }
 }

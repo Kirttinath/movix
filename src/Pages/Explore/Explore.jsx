@@ -25,7 +25,39 @@ const sortbyData = [
   { value: "original_title.asc", label: "Title (A-Z)" },
 ];
 const Explore = () => {
-  return <div></div>;
-};
+  const [data, setData] = useState(null);
+  const [pageNum, setPageNum] = useState(1);
+  const [loading, setLoading] = useState(false);
+  const [genre, setGenre] = useState(null);
+  const [sortby, setSortby] = useState(null);
+  const { mediaType } = useParams();
+
+  const { data: genresData } = useFetch(`/genre/${mediaType}/list`);
+
+  const fetchInitialData = () => {
+      setLoading(true);
+      fetchDataFromApi(`/discover/${mediaType}`, filters).then((res) => {
+          setData(res);
+          setPageNum((prev) => prev + 1);
+          setLoading(false);
+      });
+  };
+
+  const fetchNextPageData = () => {
+      fetchDataFromApi(
+          `/discover/${mediaType}?page=${pageNum}`,
+          filters
+      ).then((res) => {
+          if (data?.results) {
+              setData({
+                  ...data,
+                  results: [...data?.results, ...res.results],
+              });
+          } else {
+              setData(res);
+          }
+          setPageNum((prev) => prev + 1);
+      });
+  };
 
 export default Explore;

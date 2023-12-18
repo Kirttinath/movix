@@ -105,4 +105,15 @@
                 fill: white;
             }
         }
+        .playbtn {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            cursor: pointer;
+            svg {
+                width: 60px;
+                @include md {
+                    width: 80px;
+                }
+            }
 }

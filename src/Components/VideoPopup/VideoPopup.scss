@@ -23,4 +23,20 @@
     opacity: 0;
     transition: opacity 400ms;
   }
+
+  .videoPlayer {
+    position: relative;
+    width: 800px;
+    aspect-ratio: 16 / 9;
+    background-color: white;
+    transform: scale(0.2);
+    transition: transform 250ms;
+    .closeBtn {
+      position: absolute;
+      top: -20px;
+      right: 0;
+      color: white;
+      cursor: pointer;
+    }
+  }
 }

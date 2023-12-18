@@ -46,9 +46,31 @@
         line-height: 20px;
         font-weight: 600;
         @include md {
-            font-size: 18px;
-            line-height: 24px;
+          font-size: 18px;
+          line-height: 24px;
         }
+      }
+      .character {
+        font-size: 14px;
+        line-height: 20px;
+        opacity: 0.5;
+        @include md {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+  .castSkeleton {
+    display: flex;
+    gap: 20px;
+    overflow-y: hidden;
+    margin-right: -20px;
+    margin-left: -20px;
+    padding: 0 20px;
+    @include md {
+      margin: 0;
+      padding: 0;
     }
   }
 }

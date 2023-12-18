@@ -11,8 +11,13 @@ import PosterFallback from "../../../assets/no-poster.png";
 
 import "./DetailsBanner.scss";
 
-const DetailsBanner = () => {
-  return <div></div>;
+const DetailsBanner = ({ video, crew }) => {
+  const toHoursAndMinutes = (totalMinutes) => {
+    const hours = Math.floor(totalMinutes / 60);
+    const minutes = totalMinutes % 60;
+    return `${hours}h${minutes > 0 ? ` ${minutes}m` : ""}`;
+  };
+  return ();
 };
 
 export default DetailsBanner;

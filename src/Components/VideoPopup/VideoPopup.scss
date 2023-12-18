@@ -39,4 +39,14 @@
       cursor: pointer;
     }
   }
+  &.visible {
+    opacity: 1;
+    visibility: visible;
+    .opacityLayer {
+      opacity: 1;
+    }
+    .videoPlayer {
+      transform: scale(1);
+    }
+  }
 }

@@ -17,6 +17,8 @@ const DetailsBanner = ({ video, crew }) => {
 
   const { url } = useSelector((state) => state.home);
 
+  const _genres = data?.genres?.map((g) => g.id);
+
   const toHoursAndMinutes = (totalMinutes) => {
     const hours = Math.floor(totalMinutes / 60);
     const minutes = totalMinutes % 60;
@@ -52,6 +54,7 @@ const DetailsBanner = ({ video, crew }) => {
                     </div>
                     <div className="subtitle">{data.tagline}</div>
                   </div>
+                  <Genres data={_genres} />
                 </div>
               </ContentWrapper>
             </React.Fragment>
